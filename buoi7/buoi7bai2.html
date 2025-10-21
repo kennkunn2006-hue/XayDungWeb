@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập CSS - Menu</title>
+    <style>
+.menu {
+  width: 220px;
+  background-color: gray;
+  border: 10px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
+  border-radius: 8px;
+}
+/* --- Danh sách menu --- */
+.menu ul {
+  list-style: none;   /* Không có ký hiệu chấm */
+  margin: 0;
+  padding: 0;
+}
+/* --- Mỗi mục trong menu --- */
+.menu li  {
+  display: block;           /* Hiển thị kiểu block */
+  padding: 12px 18px;       /* Trên dưới 12px, trái phải 18px */
+  color: white;             /* Màu chữ trắng */
+  text-decoration: none;    /* Không gạch chân */
+  transition: 0.3s;         /* Hiệu ứng mượt */
+}
+/* --- Hiệu ứng di chuột --- */
+.menu li :hover {
+  background-color: lightgreen;
+  color: black;
+}
+a {
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+          <li><a>Trang chủ</a></li>
+          <li><a>Giới thiệu</a></li>
+          <li><a>Sản phẩm</a></li>
+          <li><a>Dịch vụ</a></li>
+          <li><a>Liên hệ</a></li>
+        </ul>
+      </div>
+</body>
+</html>
