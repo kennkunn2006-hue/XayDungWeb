@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+          border: 2px solid green;
+          width: 600px;
+          padding: 10px;
+        }
+    
+        .d1, .d2, .d3, .d4 {
+          width: 150px;
+          height: 150px;
+          border: 2px solid red;
+          margin: 0;
+        }
+    
+        /* 3 ô đầu nằm trên 1 hàng */
+        .d1, .d2, .d3 {
+          float: left;
+        }
+    
+        /* Ô thứ 4 xuống hàng mới */
+        .d4 {
+          clear: both;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+      </div>
+</body>
+</html>
