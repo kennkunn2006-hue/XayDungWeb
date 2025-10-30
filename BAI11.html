@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà sách ABC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header,
+        footer {
+            background-color: #f5f4f0da;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f30d0d;
+            padding: 10px 0;
+            gap: 40px;
+            list-style: none;
+        }
+
+        nav li {
+            list-style-type: none;
+            /* bỏ dấu chấm */
+        }
+
+        nav a {
+            color: rgb(122, 121, 121);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: yellow;
+
+        }
+
+        article,
+        section,
+        aside {
+            flex: 1;
+            background-color: rgb(255, 251, 251);
+            padding: 1px;
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            float: left;
+            width: 600px;
+            text-align: center;
+            
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #414040;
+            color:white;
+            padding: auto;
+            text-align: center;
+            clear: both;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="anh\book store.jpg" width="300">
+        <h2 style="color: green;"><b>WELCOME TO SÁCH ABC</b></h2>
+        <p>
+            <img src="anh\nhanvat.png" width="35">
+            <a href="">Đăng nhập</a> |
+            <a href="">Đăng ký</a> |
+            <img src="anh\shopinhh.jpg" width="35">
+            <a href="">Giỏ hàng (Trống)</a>
+        </p>
+    </header>
+    <nav>
+        <li><a href="">TRANG CHỦ</a></li>
+        <li><a href="">GIỚI THIỆU</a></li>
+        <li><a href="">LIÊN HỆ</a></li>
+        </ul>
+        <form>
+            <input type="text" placeholder="Hãy nhập tên sách cần tìm ..." size="40">
+            <input type="submit" value="Tìm sách">
+        </form>
+    </nav>
+    <div class="container">
+        <div>
+            <table border="0" align="center" cellspacing="10">
+                <tr>
+                    <td><img src="anh\1.webp" width="200" height="250"></td>
+                    <td><img src="anh\2.jpg" width="200" height="250"></td>
+                    <td><img src="anh\3.jpg" width="200" height="250"></td>
+                    <td><img src="anh\4.jpg" width="200" height="250"></td>
+                    <td><img src="anh\55.jpg" width="200" height="250"></td>
+                </tr>
+            </table>
+            <aside>
+                <p>
+                    <Font size="6"><b>Sách theo chủ đề</b></Font>
+                </p>
+                <ul>
+                    <li><a href="Ngoại ngữ">Ngoại ngữ</a></li>
+                    <li><a href="">Công nghệ thông tin</a></li>
+                    <li><a href="">Văn học</a></li>
+                    <li><a href="">Toán học</a></li>
+                    <li><a href="">Luật</a></li>
+                    <li><a href="">Kinh tế</a></li>
+                </ul>
+                <ul>
+                    <Font size="6"><b>Sách theo nhà xuất bản</b></Font>
+                    <li>Nhà xuất bản Tuổi Trẻ</li>
+                    <li>Nhà xuất bản Thống kê</li>
+                    <li>Nhà xuất bản Kim Đồng</li>
+                </ul>
+            </aside>
+            <section>
+                <div>
+                    <h1>
+                        <font color="blue">Sách đắc nhân tâm</font>
+                    </h1>
+                    <img src="anh\dacnhantam.jpg" width="250" height="250" alt="Sách đắc nhân tâm"><br>
+                    Đơn giá <font color="red">
+                        <font size="5">100.000VNĐ</font><br>
+                        <img src="anh\shopinhh.jpg" width="50" height="50" alt="Giỏ hàng">
+                        <font size="5"><a href="anh\dacnhantam.jpg">Đặt mua</a></font>
+                </div>
+            </section>
+            <aside>
+                <div align="center">
+                    <h3>SÁCH BÁN NHIỀU</h3>
+                    <marquee direction="up" scrollamount="5" scrolldelay="100" onmousemove="this.stop()"
+                        onmouseout="this.start()" height="250">
+                        <table>
+                            <tr>
+                                <td><img src="anh\dacnhantam.jpg" width="200"></td>
+                                <td><a href="">Đắc Nhân Tâm</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="anh\codon.jpg" width="200"></td>
+                                <td><a href="">Cô đơn</a></td>
+                            </tr>
+                            <tr>
+                                <td><img src="anh\2.jpg" width="200"></td>
+                                <td><a href="">Nhà giả kim</a></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <h3>LIÊN KẾT WEBSITE</h3>
+                        <select name="">
+                            <option>--- Chọn trang liên kết ---</option>
+                            <option>fahasa.com</option>
+                            <option>shopee.vn</option>
+                            <option>mia.vn</option>
+                        </select>
+                        <p>Đang online: 5</p>
+                        <p>Tổng lượt truy cập: 12345</p></marquee><
+            </aside>
+            <footer>
+                <p>©2016 -Nhà sách ABC. Allright Reserved</p>
+                <p>Website được phát triển để sử dụng làm bài tập thực hành môn Xây Dựng Web</p>
+                <p>Email: abc..com</p>
+            </footer>
+</body>
+
+</html>
